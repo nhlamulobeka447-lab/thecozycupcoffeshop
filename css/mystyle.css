@@ -1,5 +1,5 @@
 body {
-    background-color: #89928b; /* YOUR ORIGINAL COLOR RESTORED */
+    background-color: #89928b; 
     margin: 0;
     padding: 0;
     font-family: Georgia, serif;
@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
 }
 
-/* NAV - YOUR STYLE ENHANCED, NOT REPLACED */
+
 nav {
     background-color: rgba(82, 85, 83, 0.15);
     overflow: hidden;
@@ -17,7 +17,7 @@ nav {
 
 nav a {
     display: inline-block;
-    color: rgb(12, 59, 11); /* YOUR ORIGINAL GREEN */
+    color: rgb(12, 59, 11); 
     padding: 14px 17px;
     text-decoration: none;
     transition: 0.3s;
@@ -30,7 +30,7 @@ nav a:hover {
     border-radius: 6px;
 }
 
-/* HEADINGS - IMPROVED BUT SAME STYLE */
+
 h1 {
     font-style: italic;
     background-color: rgb(83, 47, 5); /* YOUR ORIGINAL COLOR */
@@ -57,7 +57,7 @@ img {
     border-radius: 10px;
 }
 
-/* HERO - BEAUTIFIED BUT SAME IMAGE */
+
 .hero {
     background-image: url("../images/spilled-coffe-background.jpg");
     background-size: cover;
@@ -76,7 +76,7 @@ img {
     max-width: 700px;
 }
 
-/* LISTS - CLEANED */
+
 ul {
     max-width: 800px;
     margin: 20px auto;
@@ -85,7 +85,7 @@ ul {
     border-radius: 10px;
 }
 
-/* SLIDER - FIXED BUT SAME STRUCTURE */
+
 .slider {
     position: relative;
     width: 100%;
@@ -109,13 +109,13 @@ ul {
     opacity: 1;
 }
 
-/* FILTER BUTTON FIX */
+
 .filter-btn.active {
     background-color: rgb(83, 47, 5);
     color: white;
 }
 
-/* FORM FIX (CONTACT PAGE) */
+
 form {
     max-width: 500px;
     margin: auto;
@@ -124,7 +124,7 @@ form {
     border-radius: 12px;
 }
 
-/* RESPONSIVE FIX */
+
 @media (max-width: 768px) {
     nav a {
         display: block;
@@ -138,4 +138,75 @@ form {
     .slider {
         height: 250px;
     }
+}
+.menu-category {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.filter-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.filter-btn {
+    background: white;
+    border: 2px solid rgb(83, 47, 5);
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.filter-btn:hover {
+    background: rgb(83, 47, 5);
+    color: white;
+    transform: scale(1.05);
+}
+
+.filter-btn.active {
+    background: rgb(83, 47, 5);
+    color: white;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+hr {
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+h3 {
+    text-align: center;
+    color: rgb(83, 47, 5);
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.menu-category li:hover {
+    background: #f5f5f5;
 }
