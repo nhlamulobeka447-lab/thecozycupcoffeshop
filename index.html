@@ -56,6 +56,33 @@ At The Cozy Cup, we serve freshly brewed coffee in a warm and welcoming space wh
     <li>Sunday: Closed</li>
 </ul>
 
+<section class="inquiry-section">
+
+    <h2>Make an Inquiry</h2>
+
+    <form id="inquiryForm">
+
+        <input type="text" id="inqName" placeholder="Full Name">
+        
+        <input type="email" id="inqEmail" placeholder="Email Address">
+
+        <select id="inqType">
+            <option value="">Select Inquiry Type</option>
+            <option value="booking">Table Booking</option>
+            <option value="order">Coffee Order</option>
+            <option value="event">Event Booking</option>
+            <option value="general">General Question</option>
+        </select>
+
+        <textarea id="inqMessage" placeholder="Write your inquiry..."></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+
+        <p id="inqError" style="color:red;"></p>
+
+    </form>
+
+</section>
 <script src="javascript/script.js"></script>
 
 </body>

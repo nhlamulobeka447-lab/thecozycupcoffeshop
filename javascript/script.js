@@ -81,3 +81,42 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.style.opacity = 1;
   }, 50);
 });
+document.addEventListener("DOMContentLoaded", function () {
+
+  const inquiryForm = document.getElementById("inquiryForm");
+  const inquiryError = document.getElementById("inqError");
+
+  if (!inquiryForm) return;
+
+  inquiryForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("inqName").value.trim();
+    const email = document.getElementById("inqEmail").value.trim();
+    const type = document.getElementById("inqType").value;
+    const message = document.getElementById("inqMessage").value.trim();
+
+    let error = "";
+
+    if (name === "") {
+      error = "Please enter your name.";
+    } else if (email === "") {
+      error = "Please enter your email.";
+    } else if (!email.includes("@")) {
+      error = "Enter a valid email address.";
+    } else if (type === "") {
+      error = "Please select inquiry type.";
+    } else if (message === "") {
+      error = "Please write your message.";
+    }
+
+    if (error !== "") {
+      inquiryError.textContent = error;
+    } else {
+      inquiryError.textContent = "";
+      alert("Inquiry submitted successfully! We will respond soon.");
+      inquiryForm.reset();
+    }
+  });
+
+});
