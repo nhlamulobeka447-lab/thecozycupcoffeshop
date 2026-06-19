@@ -69,3 +69,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+// Image slider on homepage
+document.addEventListener("DOMContentLoaded", function () {
+
+  const slides = document.querySelectorAll(".slide");
+
+  if (slides.length === 0) return; // only run on pages that have a slider
+
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    // Remove "active" from every slide
+    slides.forEach(function (slide) {
+      slide.classList.remove("active");
+    });
+    // Add "active" only to the one we want shown
+    slides[index].classList.add("active");
+  }
+
+  function nextSlide() {
+    // % loops back to 0 after reaching the last slide
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Automatically move to the next slide every 4 seconds
+  setInterval(nextSlide, 4000);
+
+});
