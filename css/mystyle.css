@@ -139,5 +139,9 @@ nav a:hover {
         font-size: 1.1rem;
     }
 }
+.filter-btn.active {
+  background-color: brown;
+  color: white;
+}
 
 

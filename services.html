@@ -21,50 +21,67 @@
 
     <hr>
 
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="tea">Tea</button>
+        <button class="filter-btn" data-filter="food">Food</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+    </div>
+
     <!-- Coffee Section -->
-    <h3>Coffee Selection</h3>
-    <ul>
-        <li>Espresso - R25</li>
-        <li>Americano - R30</li>
-        <li>Cappuccino - R35</li>
-        <li>Latte - R38</li>
-        <li>Mocha - R40</li>
-        <li>Flat White - R36</li>
-    </ul>
+    <div class="menu-category" data-category="coffee">
+        <h3>Coffee Selection</h3>
+        <ul>
+            <li>Espresso - R25</li>
+            <li>Americano - R30</li>
+            <li>Cappuccino - R35</li>
+            <li>Latte - R38</li>
+            <li>Mocha - R40</li>
+            <li>Flat White - R36</li>
+        </ul>
+    </div>
 
     <!-- Tea Section -->
-    <h3>Tea & Other Beverages</h3>
-    <ul>
-        <li>Black Tea - R20</li>
-        <li>Green Tea - R22</li>
-        <li>Herbal Tea - R25</li>
-        <li>Hot Chocolate - R35</li>
-        <li>Iced Coffee - R40</li>
-        <li>Fresh Juice - R30</li>
-    </ul>
+    <div class="menu-category" data-category="tea">
+        <h3>Tea & Other Beverages</h3>
+        <ul>
+            <li>Black Tea - R20</li>
+            <li>Green Tea - R22</li>
+            <li>Herbal Tea - R25</li>
+            <li>Hot Chocolate - R35</li>
+            <li>Iced Coffee - R40</li>
+            <li>Fresh Juice - R30</li>
+        </ul>
+    </div>
 
     <!-- Food Section -->
-    <h3>Light Meals & Snacks</h3>
-    <ul>
-        <li>Croissant (Plain/Chocolate) - R28</li>
-        <li>Muffins (Various Flavours) - R25</li>
-        <li>Toasted Sandwich (Cheese/Tomato/Ham) - R45</li>
-        <li>Chicken Wrap - R55</li>
-        <li>Beef Burger & Chips - R75</li>
-        <li>Breakfast Combo (Eggs, Toast & Coffee) - R65</li>
-    </ul>
+    <div class="menu-category" data-category="food">
+        <h3>Light Meals & Snacks</h3>
+        <ul>
+            <li>Croissant (Plain/Chocolate) - R28</li>
+            <li>Muffins (Various Flavours) - R25</li>
+            <li>Toasted Sandwich (Cheese/Tomato/Ham) - R45</li>
+            <li>Chicken Wrap - R55</li>
+            <li>Beef Burger & Chips - R75</li>
+            <li>Breakfast Combo (Eggs, Toast & Coffee) - R65</li>
+        </ul>
+    </div>
 
     <!-- Desserts -->
-    <h3>Desserts</h3>
-    <ul>
-        <li>Cheesecake Slice - R45</li>
-        <li>Chocolate Cake - R40</li>
-        <li>Ice Cream (2 Scoops) - R30</li>
-    </ul>
+    <div class="menu-category" data-category="desserts">
+        <h3>Desserts</h3>
+        <ul>
+            <li>Cheesecake Slice - R45</li>
+            <li>Chocolate Cake - R40</li>
+            <li>Ice Cream (2 Scoops) - R30</li>
+        </ul>
+    </div>
 
     <hr>
 
-    <!-- Services Section -->
+    <!-- Services Section (always visible, not filtered) -->
     <h3>Additional Services</h3>
     <ul>
         <li>Free Wi-Fi for customers</li>
@@ -77,5 +94,7 @@
     <hr>
 
     <p>Visit The Cozy Cup for a warm and relaxing coffee experience!</p>
+    <script src="javascript/script.js"></script>
 
 </body>
+</html>
