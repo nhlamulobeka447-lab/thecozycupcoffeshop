@@ -25,6 +25,8 @@
 </nav>
 
 <div class="content">
+   <div class="contact-card">
+
     <h1>Contact Us</h1>
 
     <p>We would love to hear from you!</p>
@@ -33,18 +35,15 @@
     <p><strong>Phone:</strong> 067 835 1152</p>
 
     <form id="contactForm">
-        <label>Name</label><br>
-        <input type="text" id="name"><br><br>
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
 
-        <label>Email</label><br>
-        <input type="email" id="email"><br><br>
+        <button type="submit">Send Message</button>
 
-        <label>Message</label><br>
-        <textarea id="message"></textarea><br><br>
-
-        <button type="submit">Send</button>
         <p id="formError" style="color:red;"></p>
     </form>
+
 </div>
 
 <script src="javascript/script.js"></script>
